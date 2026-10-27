@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jessa Joy | Personal Website</title>
+
+
+    <style>
+
+        /* =========================================
+           GENERAL
+        ========================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+
+
+        /* =========================================
+           HERO SECTION
+        ========================================== */
+
+        .hero {
+            width: 100%;
+            min-height: 520px;
+            background: #4a3700;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+
+        /* =========================================
+           NAVIGATION
+        ========================================== */
+
+        .navbar {
+
+            width: 88%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 22px 0;
+
+            position: relative;
+            z-index: 10;
+        }
+
+
+        .logo {
+
+            color: white;
+
+            font-size: 25px;
+
+            font-family: cursive;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 28px;
+
+            list-style: none;
+        }
+
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+            color: #f8f8f8;
+            opacity: 0.7;
+        }
+
+
+
+        /* =========================================
+           HERO CONTENT
+        ========================================== */
+
+        .hero-container {
+
+            width: 78%;
+
+            max-width: 1100px;
+
+            min-height: 440px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+
+        /* LEFT TEXT */
+
+        .hero-text {
+
+            width: 42%;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .hero-text h1 {
+
+            color: white;
+
+            font-size: 31px;
+
+            line-height: 1.05;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            margin-bottom: 18px;
+        }
+
+
+        .hero-text p {
+
+            color: white;
+
+            font-family: Georgia, serif;
+
+            font-size: 14px;
+
+            letter-spacing: 1px;
+        }
+
+
+
+        /* =========================================
+           PROFILE IMAGE
+        ========================================== */
+
+        .hero-image {
+
+            width: 50%;
+
+            height: 440px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: flex-end;
+
+            position: relative;
+        }
+
+
+        .hero-image img {
+
+            max-width: 100%;
+
+            max-height: 430px;
+
+            object-fit: contain;
+
+            filter:
+                drop-shadow(4px 0px 0px white)
+                drop-shadow(-4px 0px 0px white)
+                drop-shadow(0px 4px 0px white)
+                drop-shadow(0px -4px 0px white)
+                drop-shadow(8px 10px 10px rgba(0,0,0,0.15));
+        }
+
+
+
+        /* Decorative circle */
+
+        .circle {
+
+            position: absolute;
+
+            width: 350px;
+
+            height: 350px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,0.12);
+
+            right: 7%;
+
+            top: 90px;
+        }
+
+
+
+        /* =========================================
+           ABOUT SECTION
+        ========================================== */
+
+        .about {
+
+            background: #4a3700;
+
+            padding: 75px 0 90px;
+        }
+
+
+        .about-container {
+
+            width: 85%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 35% 65%;
+
+            gap: 70px;
+        }
+
+
+        .about-title small {
+
+            font-family: Georgia, serif;
+
+            font-size: 14px;
+
+            color: white;
+        }
+
+
+        .about-title h2 {
+
+            color: #ffffff;
+
+            font-size: 28px;
+
+            margin-top: 10px;
+        }
+
+
+        .about-text p {
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+            color: #eeeeee;
+        }
+
+
+        .highlight {
+            color: #e7a7ad;
+        }
+
+
+
+        /* =========================================
+           MORE ABOUT SECTION
+        ========================================== */
+
+        .more-about {
+
+            padding: 80px 0;
+
+            background: #4a3700;
+        }
+
+
+        .more-container {
+
+            width: 85%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .more-container h2 {
+
+            font-size: 35px;
+
+            color: #f8fbfb;
+
+            margin-bottom: 15px;
+        }
+
+
+        .more-container > p {
+
+            max-width: 700px;
+
+            margin: 0 auto 50px;
+
+            color: #eeeeee;
+
+            line-height: 1.8;
+        }
+
+
+
+        /* =========================================
+           CARDS
+        ========================================== */
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 30px;
+        }
+
+
+        .card {
+
+            background: white;
+
+            padding: 40px 25px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+
+        .card .icon {
+
+            font-size: 38px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .card h3 {
+
+            color: #0c0d0d;
+
+            margin-bottom: 15px;
+
+            font-size: 20px;
+        }
+
+
+        .card p {
+
+            color: #777;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+
+        /* =========================================
+           GALLERY PICTURES
+        ========================================== */
+
+        .gallery-card {
+
+            padding: 0;
+
+            overflow: hidden;
+
+            background: white;
+
+            border-radius: 10px;
+
+            position: relative;
+        }
+
+
+        .gallery-image-container {
+
+            width: 100%;
+
+            height: 260px;
+
+            overflow: hidden;
+
+            background: #eeeeee;
+        }
+
+
+        .gallery-image {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: transform 0.5s ease;
+        }
+
+
+        /* Zoom image when mouse is over it */
+
+        .gallery-card:hover .gallery-image {
+
+            transform: scale(1.08);
+        }
+
+
+        .gallery-content {
+
+            padding: 25px;
+        }
+
+
+        .gallery-content h3 {
+
+            font-size: 23px;
+
+            color: #4a3700;
+
+            margin-bottom: 12px;
+        }
+
+
+        .gallery-content p {
+
+            color: #777;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+
+        /* =========================================
+           CONTACT
+        ========================================== */
+
+        .contact {
+
+            padding: 80px 20px;
+
+            text-align: center;
+
+            background: #4a3700;
+        }
+
+
+        .contact h2 {
+
+            color: white;
+
+            font-size: 35px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .contact p {
+
+            color: white;
+
+            max-width: 600px;
+
+            margin: auto;
+
+            line-height: 1.7;
+        }
+
+
+        .contact-btn {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 13px 32px;
+
+            background: white;
+
+            color: #4a3700;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+        }
+
+
+        .contact-btn:hover {
+
+            background: #241b00;
+
+            color: white;
+
+            transform: translateY(-3px);
+        }
+
+
+
+        /* =========================================
+           FOOTER
+        ========================================== */
+
+        footer {
+
+            padding: 25px;
+
+            text-align: center;
+
+            background: #222;
+
+            color: #aaa;
+
+            font-size: 13px;
+        }
+
+
+
+        /* =========================================
+           MOBILE MENU BUTTON
+        ========================================== */
+
+        .menu-btn {
+
+            display: none;
+
+            border: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 28px;
+
+            cursor: pointer;
+        }
+
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================== */
+
+        @media (max-width: 900px) {
+
+
+            .navbar {
+                width: 90%;
+            }
+
+
+            .menu-btn {
+                display: block;
+            }
+
+
+            .nav-links {
+
+                position: absolute;
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                top: 70px;
+
+                left: 0;
+
+                width: 100%;
+
+                padding: 25px;
+
+                background: #332600;
+
+                border-radius: 5px;
+            }
+
+
+            .nav-links.active {
+                display: flex;
+            }
+
+
+            .hero-container {
+
+                width: 90%;
+
+                flex-direction: column;
+
+                text-align: center;
+
+                padding-top: 50px;
+            }
+
+
+            .hero-text {
+                width: 100%;
+            }
+
+
+            .hero-text h1 {
+                font-size: 35px;
+            }
+
+
+            .hero-image {
+
+                width: 100%;
+
+                height: 390px;
+
+                margin-top: 30px;
+            }
+
+
+            .hero-image img {
+                max-height: 380px;
+            }
+
+
+            .circle {
+
+                width: 300px;
+
+                height: 300px;
+
+                right: 50%;
+
+                transform: translateX(50%);
+
+                top: 300px;
+            }
+
+
+            .about-container {
+
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+
+                text-align: center;
+            }
+
+
+            .cards {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .gallery-image-container {
+
+                height: 350px;
+            }
+
+        }
+
+
+
+        @media (max-width: 500px) {
+
+
+            .hero-text h1 {
+                font-size: 27px;
+            }
+
+
+            .hero-image {
+                height: 340px;
+            }
+
+
+            .hero-image img {
+                max-height: 330px;
+            }
+
+
+            .about {
+                padding: 55px 0;
+            }
+
+
+            .more-about {
+                padding: 55px 0;
+            }
+
+
+            .gallery-image-container {
+                height: 240px;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="hero" id="home">
+
+
+        <nav class="navbar">
+
+
+            <a href="#home" class="logo">
+                Jessa Joy Remolisan
+            </a>
+
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Welcome</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+
+
+        <div class="circle"></div>
+
+
+
+        <div class="hero-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-text">
+
+                <h1>
+                    PERSONAL<br>
+                    BLOG
+                </h1>
+
+                <p>
+                    Welcome to my personal website
+                </p>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-image">
+
+                <img
+                    src="jessajoy.jpg"
+                    alt="Jessa Joy"
+                >
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+    ========================================== -->
+
+    <section class="about" id="about">
+
+
+        <div class="about-container">
+
+
+            <div class="about-title">
+
+
+                <small>
+                    hello,
+                </small>
+
+
+                <h2>
+                    I'm Jessa Joy
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="about-text">
+
+
+                <p>
+
+                    I'm a student who enjoys learning new things,
+                    developing my skills, and discovering new ideas.
+
+                    Welcome to my personal website where I share
+
+                    <span class="highlight">
+
+                        my experiences, interests, projects,
+                        and personal journey.
+
+                    </span>
+
+                    This website is a place where you can learn more
+                    about me, my hobbies, my goals, and the things
+                    that inspire me.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         EXPLORE MY WORLD
+    ========================================== -->
+
+    <section class="more-about" id="blog">
+
+
+        <div class="more-container">
+
+
+            <h2>
+                Explore My World
+            </h2>
+
+
+            <p>
+
+                Here are some of the things that are important to me.
+                I enjoy learning, creating projects, spending time
+                with people who matter to me, and improving myself
+                every day.
+
+            </p>
+
+
+
+            <div class="cards">
+
+
+                <!-- STUDIES -->
+
+                <div class="card">
+
+
+                    <div class="icon">
+                        💻
+                    </div>
+
+
+                    <h3>
+                        My Studies
+                    </h3>
+
+
+                    <p>
+
+                        I enjoy learning about technology,
+                        computers, programming, and developing
+                        new skills that can help me in the future.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- GALLERY -->
+
+                <div class="card">
+
+
+                    <div class="icon">
+                        📷
+                    </div>
+
+
+                    <h3>
+                        My Gallery
+                    </h3>
+
+
+                    <p>
+
+                        A collection of some of my favorite
+                        memories, photographs, experiences,
+                        friends, and special moments.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- GOALS -->
+
+                <div class="card">
+
+
+                    <div class="icon">
+                        ✨
+                    </div>
+
+
+                    <h3>
+                        My Goals
+                    </h3>
+
+
+                    <p>
+
+                        My goal is to continue improving myself,
+                        learn from every experience, and work
+                        toward a successful future.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         MY GALLERY
+    ========================================== -->
+
+    <section class="more-about" id="gallery">
+
+
+        <div class="more-container">
+
+
+            <h2>
+                My Gallery
+            </h2>
+
+
+            <p>
+
+                Here are some of my favorite memories with
+                my friends, my family, and the hobbies
+                that I enjoy.
+
+            </p>
+
+
+
+            <div class="cards">
+
+
+
+                <!-- =====================================
+                     FRIENDS PICTURE
+                ====================================== -->
+
+                <div class="card gallery-card">
+
+
+                    <div class="gallery-image-container">
+
+                        <img
+                            src="friend.jpg"
+                            alt="My Friends"
+                            class="gallery-image"
+                        >
+
+                    </div>
+
+
+                    <div class="gallery-content">
+
+
+                        <h3>
+                            Friends
+                        </h3>
+
+
+                        <p>
+
+                            These are some of my favorite
+                            memories and experiences with
+                            my friends.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <!-- =====================================
+                     FAMILY PICTURE
+                ====================================== -->
+
+                <div class="card gallery-card">
+
+
+                    <div class="gallery-image-container">
+
+                        <img
+                            src="fam.jpg"
+                            alt="My Family"
+                            class="gallery-image"
+                        >
+
+                    </div>
+
+
+                    <div class="gallery-content">
+
+
+                        <h3>
+                            Family
+                        </h3>
+
+
+                        <p>
+
+                            My family is one of the most
+                            important parts of my life.
+                            These are some of our memories
+                            together.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="card gallery-card">
+
+
+                    <div class="gallery-image-container">
+
+                        <img
+                            src="bf(1)(1).jpg"
+                            alt="My Hobbies"
+                            class="gallery-image"
+                        >
+
+                    </div>
+
+
+                    <div class="gallery-content">
+
+
+                        <h3>
+                            MY BOYFRIEND
+                        </h3>
+
+
+                        <p>
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+
+        /* GET MENU ELEMENTS */
+
+        const menuBtn =
+            document.getElementById("menuBtn");
+
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+
+        /* OPEN / CLOSE MOBILE MENU */
+
+        menuBtn.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.toggle("active");
+
+            }
+        );
+
+
+
+        /* =========================================
+           CLOSE MENU AFTER CLICKING A LINK
+        ========================================== */
+
+        const links =
+            document.querySelectorAll(".nav-links a");
+
+
+        links.forEach(function(link) {
+
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    navLinks.classList.remove("active");
+
+                }
+            );
+
+
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
